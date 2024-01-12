@@ -14,6 +14,6 @@ public class MyWorld extends World
      */
     public MyWorld()
     {
-        super(500, 500, 1);
+        super(400, 500, 1);
     }
 }
