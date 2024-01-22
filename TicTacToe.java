@@ -1,19 +1,19 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Blackboard here.
+ * Write a description of class TicTacToe here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Blackboard extends World
+public class TicTacToe extends World
 {
     private boolean xTurn;
     /**
-     * Constructor for objects of class Blackboard.
+     * Constructor for objects of class TicTacToe.
      * 
      */
-    public Blackboard()
+    public TicTacToe()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(3, 3,100); 

@@ -14,6 +14,15 @@ public class BoardPiece extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        if (Greenfoot.mouseClicked(this)) {
+            TicTacToe game = getWorldOfType(TicTacToe.class);
+            if (game.isXTurn()) {
+                game.addObject (new X(), getX(), getY());
+                game.changeTurns();
+            } else {
+                game.addObject(new O(), getX(),getY());
+                game.changeTurns();
+            }
+        }
     }
 }
