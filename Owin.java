@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Owin extends Actor
 {
+    public Owin() {
+        getImage().scale(getImage().getWidth()/6, getImage().getHeight()/6);
+    }
     /**
      * Act - do whatever the Owin wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.

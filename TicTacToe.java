@@ -43,25 +43,25 @@ public class TicTacToe extends World
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x + 1, y, X.class).size() > 0 &&
                     getObjectsAt(x + 2, y, X.class).size() > 0){
-                        showText("X gewinnt!", 3,3);
+                        addObject(new Xwin(),3,3);
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x, y + 1, X.class).size() > 0 &&
                     getObjectsAt(x, y + 2, X.class).size() > 0){
-                        showText("X gewinnt!", 3,3);
+                        addObject(new Xwin(), 3,3);;
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x + 1, y + 1, X.class).size() > 0 &&
                     getObjectsAt(x + 2, y + 2, X.class).size() > 0){
-                        showText("X gewinnt!", 3,3);
+                        addObject(new Xwin(), 3,3);;
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x + 1, y - 1, X.class).size() > 0 &&
                     getObjectsAt(x + 2, y - 2, X.class).size() > 0){
-                        showText("X gewinnt!", 3,3);
+                        addObject(new Xwin(), 3,3);
                         Greenfoot.stop();
                     }
             }
@@ -72,25 +72,25 @@ public class TicTacToe extends World
                 if (getObjectsAt(x, y, O.class).size() > 0 &&
                     getObjectsAt(x + 1, y, O.class).size() > 0 &&
                     getObjectsAt(x + 2, y, O.class).size() > 0){
-                        showText("O gewinnt!", 3,3);
+                        addObject(new Owin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, O.class).size() > 0 &&
                     getObjectsAt(x, y + 1, O.class).size() > 0 &&
                     getObjectsAt(x, y + 2, O.class).size() > 0){
-                        showText("O gewinnt!", 3,3);
+                        addObject(new Owin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x + 1, y + 1, O.class).size() > 0 &&
                     getObjectsAt(x + 2, y + 2, O.class).size() > 0){
-                        showText("O gewinnt!", 3,3);
+                        addObject(new Owin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, O.class).size() > 0 &&
                     getObjectsAt(x + 1, y - 1, O.class).size() > 0 &&
                     getObjectsAt(x + 2, y - 2, O.class).size() > 0){
-                        showText("O gewinnt!", 3,3);
+                        addObject(new Owin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
             }
