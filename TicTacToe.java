@@ -20,14 +20,21 @@ public class TicTacToe extends World
         makeBoard();
         xTurn = true;
     }
-    
+    /**
+     * X ist als erstes an der Reihe
+     */
     public boolean isXTurn(){
         return xTurn;
     }
-    
+    /**
+     * Wenn X schon einmal dran war, dann ist O an der Reihe.
+     */
     public void changeTurns() {
         xTurn = !xTurn;
     }
+    /**
+     * Das Board wird erstellt
+     */
     public void makeBoard() {
         for (int x = 0; x < 3; x++) {
             for (int y = 0; y < 3; y++) {
@@ -35,7 +42,9 @@ public class TicTacToe extends World
             }
         }
     }
-    
+    /**
+     * Es wird geschaut, ob X oder O gewinnt. Funktioniert auch diagonal
+     */
     public void act() {
         //schauen ob X gewinnt
         for (int x = 0; x <3; x++) {
@@ -43,25 +52,25 @@ public class TicTacToe extends World
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x + 1, y, X.class).size() > 0 &&
                     getObjectsAt(x + 2, y, X.class).size() > 0){
-                        addObject(new Xwin(),3,3);
+                        addObject(new Xwin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x, y + 1, X.class).size() > 0 &&
                     getObjectsAt(x, y + 2, X.class).size() > 0){
-                        addObject(new Xwin(), 3,3);;
+                        addObject(new Xwin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x + 1, y + 1, X.class).size() > 0 &&
                     getObjectsAt(x + 2, y + 2, X.class).size() > 0){
-                        addObject(new Xwin(), 3,3);;
+                        addObject(new Xwin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
                 if (getObjectsAt(x, y, X.class).size() > 0 &&
                     getObjectsAt(x + 1, y - 1, X.class).size() > 0 &&
                     getObjectsAt(x + 2, y - 2, X.class).size() > 0){
-                        addObject(new Xwin(), 3,3);
+                        addObject(new Xwin(),getWidth() / 2,getHeight() / 2);
                         Greenfoot.stop();
                     }
             }

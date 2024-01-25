@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class BoardPiece extends Actor
 {
     /**
-     * Act - do whatever the BoardPiece wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * X und O können auf dem Board hinzugefügt werden.
      */
     public void act()
     {

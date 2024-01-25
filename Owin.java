@@ -8,6 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Owin extends Actor
 {
+    /**
+     * Die Grösse vom Gewinn Bild wird skaliert
+     */
     public Owin() {
         getImage().scale(getImage().getWidth()/6, getImage().getHeight()/6);
     }
